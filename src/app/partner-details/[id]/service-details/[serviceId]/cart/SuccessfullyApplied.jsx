@@ -10,7 +10,7 @@ const SuccessfullyApplied = ({ isVisible, onClose, offerDetails }) => {
     if (isVisible) {
       const timer = setTimeout(() => {
         onClose();
-      }, 5000); // Auto close after 3 seconds
+      }, 4000); // Auto close after 3 seconds
       return () => clearTimeout(timer);
     }
   }, [isVisible, onClose]);
